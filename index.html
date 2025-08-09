@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MovieFlix — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-left">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="nav-right">
+      <select id="langSelect" aria-label="Choose language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+      <a href="#" class="signin">Sign In</a>
+      <img src="profile-icon.png" alt="profile" class="profile">
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('hero-banner.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-center">
+        <h1 id="hero-headline">Unlimited TV shows, movies and much more.</h1>
+        <p class="sub">Watch anywhere. Cancel anytime.</p>
+
+        <form id="get-started-form" class="email-form" onsubmit="handleGetStarted(event)">
+          <input id="email" type="email" placeholder="Enter your email" required aria-label="Email">
+          <button id="getStartedBtn" type="submit">Get Started ►</button>
+        </form>
+        <p class="small">Ready to watch? Enter your email to create or restart your membership.</p>
+      </div>
+    </section>
+
+    <!-- TRENDING TOP 10 -->
+    <section class="trending-top10">
+      <h2>Trending Now — Top 10</h2>
+      <ol class="top10-list">
+        <!-- number + small poster -->
+        <li><span class="rank">1</span><img src="trending1.jpeg" alt="1"></li>
+        <li><span class="rank">2</span><img src="trending2.jpeg" alt="2"></li>
+        <li><span class="rank">3</span><img src="trending3.jpeg" alt="3"></li>
+        <li><span class="rank">4</span><img src="trending4.jpeg" alt="4"></li>
+        <li><span class="rank">5</span><img src="trending5.jpeg" alt="5"></li>
+        <li><span class="rank">6</span><img src="trending6.jpeg" alt="6"></li>
+        <li><span class="rank">7</span><img src="trending7.jpeg" alt="7"></li>
+        <li><span class="rank">8</span><img src="trending8.jpeg" alt="8"></li>
+        <li><span class="rank">9</span><img src="trending9.jpeg" alt="9"></li>
+        <li><span class="rank">10</span><img src="trending10.jpeg" alt="10"></li>
+      </ol>
+    </section>
+
+    <footer class="home-footer">
+      <p>© 2025 MovieFlix — Demo for portfolio</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
